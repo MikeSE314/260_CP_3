@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- home.html -->
+<html>
+    <head>
+        <title>MadLibz Player</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='shortcut icon' href='resources/images/me_16x16.png' type='image/png' sizes='16x16'>
+        <link rel='stylesheet' href='resources/css/bootstrap.css'>
+        <link rel='stylesheet' href='resources/css/styles.css'>
+        <script  src='https://code.jquery.com/jquery-latest.min.js'></script>
+        <script src='resources/js/bootstrap.min.js'></script>
+    </head>
+    <body>
+        <!-- body -->
+        <div class='container-fluid'>
+            <div id="v">
+                <h1>{{title}}</h1>
+                <ul v-for="qu in zipped_questions">
+                    <li>
+                        {{qu["b"]}} <input type="text" v-model="qu['q']['v']">
+                    </li>
+                </ul>
+                <p v-if="filled">{{zipped_answers}}</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class='footer footer-default'>
+            <div class='container-fluid'>
+                <p class='center center-words'><span class='contact-head'>Find me on Github:</span> <span class='contact-body'><a href='https://github.com/MikeSE314/260_CP_3'>Creative Project 3</a></span></p>
+            </div>
+        </footer>
+        <!-- end scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+        <script src='resources/js/script.js'></script>
+    </body>
+</html>

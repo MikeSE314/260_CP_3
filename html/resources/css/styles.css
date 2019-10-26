@@ -1,0 +1,311 @@
+.contact-body {
+    font-weight: bold;
+}
+
+.floaty {
+    float: left;
+}
+
+.greyed {
+    color: grey;
+}
+
+.center {
+    margin: auto;
+}
+
+.center-words {
+    text-align: center;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.vertical-container {
+    position: relative;
+}
+
+.col-no-b {
+    padding: 0;
+}
+
+.padding-v {
+    padding: 25% 0;
+}
+
+.padding-v-sm {
+    padding: 12% 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+.mt-1 {
+    margin-top: 1rem;
+} 
+.mt-2 {
+    margin-top: 2rem;
+} 
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+} 
+.mb-2 {
+    margin-bottom: 2rem;
+} 
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.bottom-gutter {
+    margin-bottom: 20px;
+}
+
+.attribute {
+    float: right;
+    margin-right: 25%;
+}
+
+.no-over {
+    max-width: 100%;
+}
+
+.rev-fr {
+    float: right;
+}
+
+.rev-fl {
+    float: left;
+}
+
+.top-buffer {
+    padding-top: 15px;
+}
+
+.song-title {
+    float: left;
+    margin-left: 25px;
+    font-size: 14px !important;
+}
+
+.song-artist {
+    float: right;
+    font-size: 14px !important;
+}
+
+.song-title-big {
+    top: calc(100% - 30px) !important;
+}
+
+.song-artist-big {
+    top: calc(100% - 13px) !important;
+}
+
+.song-artist-big,
+.song-title-big {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.square {
+}
+
+.footer {
+    position: relative;
+    border: 1px solid;
+    padding-top: 17px;
+    height: 52px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.big-quote {
+    font-size: 4rem;
+    line-height: 1rem;
+}
+
+.sidebar {
+    border-right: 1px solid #e9e9e9;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding: 20px;
+    padding-top: 52px;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    z-index: 1;
+}
+
+/* border-radius: 15px */
+
+.album-art,
+.playlist-art,
+.song-art,
+.upload-box {
+    border-radius: 15px;
+}
+
+.album-art,
+.playlist-art,
+.song-art {
+    position: relative;
+    background-color: #e9e9e9;
+    border: 8px solid white;
+}
+
+.square:after,
+.album-art:after,
+.playlist-art:after,
+.song-art:after {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% + 70px);
+}
+
+.album-art *,
+.playlist-art *,
+.song-art * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album-art * {
+    font-size: 20rem;
+}
+
+.playlist-art * {
+    font-size: 15rem;
+}
+
+.playlist-art-small * {
+    font-size: 8rem;
+}
+
+.song-art * {
+    font-size: 20rem;
+}
+
+.song-art {
+    background-color: #e9e9e9;
+}
+
+.navbar-slim {
+    margin-bottom: 0px;
+}
+
+.upload-box {
+    background-color: #e9e9e9;
+    min-height: 10rem;
+}
+
+.upload-box p {
+    text-align: center;
+}
+
+.small-song-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.small-song-pic {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.big-song-icon {
+    width: 100%;
+}
+
+.big-song-pic {
+    text-align: center;
+    top: calc(50% - 20px);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.song {
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    min-height: 4rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.song-row {
+    padding-bottom: 5px;
+}
+
+.row-bottom-gutter {
+    padding-bottom: 15px;
+}
+
+.page-height {
+    min-height: 50rem;
+}
+
+.half-height {
+    min-height: 25rem;
+}
+
+@media (max-width: 767px) {
+    .xs-no-show {
+        display: none;
+    } 
+    .rev-p {
+        float: none;
+    }
+    .xs-pb {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sm-no-show {
+        display: none;
+    } 
+    .rev-p {
+        float: none;
+    }
+    .sm-pb {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .md-no-show {
+        display: none;
+    } 
+}
+
+@media (min-width: 1200px) {
+    .lg-no-show {
+        display: none;
+    }
+}
+
